@@ -5,7 +5,7 @@ class Pet:
         self.name = name
         self.pet_type = type #call the setter and getter function
         Pet.all.append(self)
-        # if pet_type in Pet.PET_TYPES:
+        # if pet_type in Pet.PET_TYPES: //not here, because it only applies first time you initialise, after that it won't apply again. completely mutable with out the rule.
         #     self.pet_type = pet_type 
         # else:
         #     raise Exception
